@@ -1,10 +1,10 @@
-import Nav from "../components/nav"
+import Header from "../components/header.jsx"
+import "../styles/header.scss"
 
 function Rooms () {
     return (
         <div>
-            <h1>Nos logements !</h1>
-            <Nav></Nav>
+            <Header />
         </div>
     )
 }

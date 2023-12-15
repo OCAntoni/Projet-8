@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap');
+
 /*variables couleurs*/
 
 $red: #FF6060;
@@ -8,8 +10,33 @@ $font1: 'Montserrat';
 
 /*styles*/
 
-.barrre-nav {
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header {
     display: flex;
-    justify-content: right;
-    color: purple;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 45px;
+    margin-right: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: auto;
+    gap: 57px;
+
+    & a {
+        text-decoration: none;
+        color: $red;
+        font-family: $font1;
+        font-size: 24px;
+    
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
