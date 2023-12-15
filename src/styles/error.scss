@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap');
+
+/*variables couleurs*/
+
+$red: #FF6060;
+
+/*variables font*/
+
+$font1: 'Montserrat';
+
+/*styles*/
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+}
+
+.code-error {
+    margin-top: 89px;
+    font-size: 288px;
+    font-family: $font1;
+    margin-bottom: 0px;
+    color: $red;
+}
+
+.message-error {
+    font-size: 36px;
+    font-family: $font1;
+    color: $red;
+}
+
+.redirection {
+    text-decoration: underline;
+    color: #FF6060;
+    font-family: $font1;
+    font-size: 18px;
+    margin-bottom: 139px;
+}
