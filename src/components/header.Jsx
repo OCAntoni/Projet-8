@@ -1,5 +1,4 @@
 import Nav from "./nav"
-import "../styles/header.scss"
 
 function Header () {
     return (
