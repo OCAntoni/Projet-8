@@ -1,8 +1,8 @@
-import Header from "../components/header.jsx"
-import Footer from "../components/footer.jsx"
-import BannerHome from "../components/banner-home.jsx"
-import CardsHome from "../components/cards-home.jsx"
-import "../styles/header.scss"
+import Header from "../components/header/header.jsx"
+import Footer from "../components/footer/footer.jsx"
+import BannerHome from "../components/banner-home/banner-home.jsx"
+import CardsHome from "../components/cards-home/cards-home.jsx"
+import "../styles/main.scss"
 
 
 function Home () {

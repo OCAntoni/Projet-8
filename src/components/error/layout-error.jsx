@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import "../../styles/main.scss"
 
 function Layout() {
     return (

@@ -1,5 +1,5 @@
-import Img from "../assets/home.png"
-import "../styles/banner-home.scss"
+import Img from "../../assets/home.png"
+import "../../styles/main.scss"
 
 function BannerHome() {
     return(

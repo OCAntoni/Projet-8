@@ -1,5 +1,5 @@
-import Img from "../assets/apropos.png"
-import "../styles/banner-apropos.scss"
+import Img from "../../assets/apropos.png"
+import "../../styles/main.scss"
 
 function BannerApropos() {
     return (
