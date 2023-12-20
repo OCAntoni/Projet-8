@@ -7,32 +7,40 @@ $font1: 'Montserrat';
 /*styles*/
 
 .div-cards {
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     background-color: #F6F6F6;
     border-radius: 25px;
     margin-top: 43px;
     margin-bottom: 50px;
-    padding: 56px 50px;
+    padding: 50px;
+    gap: 50px 60px;
 }
 
 figure {
-    margin-bottom: 50px;
+    position: relative;
+    margin: 0;
+    width: 30%;
 }
 
 .img-cards {
-    position: relative;
     width: 340px;
     height: 340px;
+    border-radius: 10px;
     object-fit: cover;
+    filter: brightness(0.8);
 }
 
 .title-cards {
     position: absolute;
-    z-index: 1;
+    bottom: 20px;
+    left: 20px;
     text-decoration: none;
-    /*color:white;*/
+    color:white;
     font-family: $font1;
     font-size: 18px;
 }
