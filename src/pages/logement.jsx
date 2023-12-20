@@ -17,12 +17,16 @@ function Logement() {
         }
         return false;
     })
+    console.log(logement)
     return (
         <div>
             <Header />
-            {logements.map((datas) => (
-            <img src={datas.pictures} />
-            ))}
+           <div>
+        {logement.pictures.map((photos) => (
+            <img src={photos} />
+        ))}
+        </div>
+
             <Footer />
            
         </div>
