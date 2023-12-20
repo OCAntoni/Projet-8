@@ -69,8 +69,17 @@ $font1: 'Montserrat';
     padding: 20px 10px 20px 10px;
     margin-top: 0px;
     font-family: $font1;
+    opacity: 1;
+    transition: 0.5s;
+    
 
     &-hidden {
-        display: none;
+        background-color: #F6F6F6;
+        color: $red;
+        font-family: $font1;
+        opacity: 0;
+        height: 0;
+        transition: 0.5s;
+        margin: 0;
     }
 }
