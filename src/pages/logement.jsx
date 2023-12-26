@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Data from "../datas/appartements.json"
 import Header from "../components/header/header"
 import Carousel from "../components/carousel/carousel"
+import Rating from '../components/rating-logements/rating.jsx'
 import Accordion from '../components/accordion-apropos/accordion-apropos'
 import Footer from "../components/footer/footer"
 import Error from './error'
@@ -44,9 +45,7 @@ function Logement() {
                             </ul>
                         ))}
                     </div>
-                    <div className='rating'>
-                    <i>{logement.rating}</i>
-                </div>
+                    <Rating notation={logement.rating} />
                 </div>
                 <div className='descriptif'>
                     <Accordion title="Description" text={logement.description} />
@@ -55,7 +54,6 @@ function Logement() {
             </div>
             <Footer />
         </div>
-        
     )
 }
 

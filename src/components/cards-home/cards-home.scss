@@ -19,28 +19,36 @@ $font1: 'Montserrat';
     margin-bottom: 50px;
     padding: 50px;
     gap: 50px 60px;
-}
+    @media (max-width : 950px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 22px;
+        margin-bottom: 27px;
+        background-color: white;
+        padding: 0px;
+    }
 
-figure {
-    position: relative;
-    margin: 0;
-    width: 30%;
-}
+    figure {
+        position: relative;
+        margin: 0;
+        width: 30%;
+    }
 
-.img-cards {
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    object-fit: cover;
-    filter: brightness(0.8);
-}
+    .img-cards {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        object-fit: cover;
+        filter: brightness(0.8);
+    }
 
-.title-cards {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    text-decoration: none;
-    color:white;
-    font-family: $font1;
-    font-size: 18px;
+    .title-cards {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        text-decoration: none;
+        color:white;
+        font-family: $font1;
+        font-size: 18px;
+    }
 }

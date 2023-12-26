@@ -20,22 +20,40 @@ body {
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
-}
+    @media (max-width : 950px) {
+        margin-top: 20px;
+        margin-bottom: 27px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    flex: auto;
-    gap: 57px;
+    .logo {
+        @media (max-width : 950px) {
+            width: 145px;
+        }
+    }
 
-    & a {
-        text-decoration: none;
-        color: $red;
-        font-family: $font1;
-        font-size: 24px;
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        flex: auto;
+        gap: 57px;
+        @media (max-width : 950px) {
+            gap: 26px;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $red;
+            font-family: $font1;
+            font-size: 24px;
+            @media (max-width : 950px) {
+                font-size: 12px;
+            }
     
-        &:hover {
-            text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

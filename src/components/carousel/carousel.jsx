@@ -16,7 +16,7 @@ function Carousel({images}) {
    
    return (
       <div>
-         <img className="img-galery" src={images[isArrow-1]} />
+         <img className="img-galery" src={images[isArrow-1]} alt="photo ilustrant le logement" />
             {images.length > 1 ? (
                <div>
                   <div>

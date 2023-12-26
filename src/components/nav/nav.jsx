@@ -5,7 +5,6 @@ function Nav() {
         <nav className="nav">
             <NavLink to="/">Accueil</NavLink>
             <NavLink to="/about">A propos</NavLink>
-            <NavLink to="/error">test</NavLink>
         </nav>
     )
 }
