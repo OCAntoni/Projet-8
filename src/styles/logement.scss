@@ -71,129 +71,131 @@ $red: #FF6060;
         }
     }
 
-
-    .infos {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         margin-top: 30px;
+        margin-bottom: 30px;
         @media (max-width : 950px) {
-            margin-top: 15px;;
-        }
-
-        h2 {
-            font-family: $font1;
-            color: $red;
-            font-size: 36px;
-            margin: 0;
-            @media (max-width : 950px) {
-                font-size: 18px;
-            }
-        }
-
-        p {
-            font-family: $font1;
-            color: $red;
-            font-size: 18px;
-            margin: 0;
-            margin-top: 10px;
-            @media (max-width : 950px) {
-                font-size: 14px;
-                margin-top: 5px;
-            }
-        }
-    }
-
-    .infos-host {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        @media (max-width : 950px) {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    }
-
-    .host {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: center;
-        gap: 10px;
-        @media (max-width : 950px) {
-            
-        }
-
-        p {
-            font-family: $font1;
-            color: $red;
-            font-size: 18px;
-            @media (max-width : 950px) {
-               font-size: 12px;
-            }
-        }
-
-        img {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            @media (max-width : 950px) {
-                width: 32px;
-                height: 32px;
-            }
-        }
-    }
-
-    .tags-rating {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        @media (max-width : 950px) {
-            margin-left: 20px;
-            margin-right: 20px;
             flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-
-    .tags {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        margin-top: 20px;
-        margin-bottom: 24px;
-        @media (max-width : 950px) {
-            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+            margin-bottom: 18px;
         }
 
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            background-color: $red;
-            padding: 5px 35px;
-            border-radius: 10px;
-        }
+        .infos-tags {
+            display: flex;
+            flex-direction: column;
+    
+            .infos {
+                @media (max-width : 950px) {
+                    margin-top: 15px;;
+                }
 
-        li {
-            font-family: $font1;
-            color: white;
-            font-size: 14px;
-            @media (max-width : 950px) {
-                font-size: 10px;;
+                h2 {
+                    font-family: $font1;
+                    color: $red;
+                    font-size: 36px;
+                    margin: 0;
+                    @media (max-width : 950px) {
+                        font-size: 18px;
+                    }
+                }
+
+                p {
+                    font-family: $font1;
+                    color: $red;
+                    font-size: 18px;
+                    margin: 0;
+                    margin-top: 10px;
+                    @media (max-width : 950px) {
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .tags {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                margin-top: 20px;
+                @media (max-width : 950px) {
+                    margin-top: 10px;
+                }
+        
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    background-color: $red;
+                    padding: 5px 35px;
+                    border-radius: 10px;
+                }
+        
+                li {
+                    font-family: $font1;
+                    color: white;
+                    font-size: 14px;
+                    @media (max-width : 950px) {
+                        font-size: 10px;;
+                    }
+                }
             }
         }
-    }
 
-    .rating {
-        display: flex;
-        gap: 10px;
-
-        .stars {
-            width: 24px;
+        .host-rating {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
             @media (max-width : 950px) {
-                width: 20px;
-                height: 20px;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .host {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                
+                p {
+                    font-family: $font1;
+                    color: $red;
+                    font-size: 18px;
+                    @media (max-width : 950px) {
+                    font-size: 12px;
+                    }
+                }
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    @media (max-width : 950px) {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+
+            .rating {
+                display: flex;
+                justify-content: end;
+                gap: 10px;
+        
+                .stars {
+                    width: 24px;
+                    @media (max-width : 950px) {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
             }
         }
     }
@@ -220,13 +222,9 @@ $red: #FF6060;
         }
 
         .titre {
-            font-size: 18px;
-        }
-        
-        .text {
-            display: flex;
-            flex-direction: column;
-            font-size: 16px;
+            @media (max-width : 950px) {
+                font-size: 13px;
+            }
         }
     }
 }

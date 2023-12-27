@@ -19,22 +19,17 @@ function Logement() {
     console.log(logement)
     return (
         <div>
-            <div className='lodge-body'>
-                <Header />
-                <div className='galery'>
-                    <Carousel images={logement.pictures} alt={logement.title} />
-                </div>
-                <div className='infos-host'>
+        <div className='lodge-body'>
+            <Header />
+            <div className='galery'>
+                <Carousel images={logement.pictures} alt={logement.title} />
+            </div>
+            <div className="container">
+                <div className='infos-tags'>
                     <div className='infos'>
                         <h2>{logement.title}</h2>
                         <p>{logement.location}</p>
                     </div>
-                    <div className='host'>
-                        <p>{logement.host.name}</p>
-                        <img src={logement.host.picture} alt={`Image représentant ${logement.host.name}`} />
-                </div>
-                </div>
-                <div className='tags-rating'>
                     <div className='tags'>
                         {logement.tags.map((tag) =>(
                             <ul key={tag}>
@@ -42,15 +37,22 @@ function Logement() {
                             </ul>
                         ))}
                     </div>
+                </div>
+                <div className="host-rating">
+                    <div className='host'>
+                        <p>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt={`Image représentant ${logement.host.name}`} />
+                    </div>
                     <Rating notation={logement.rating} />
                 </div>
-                <div className='descriptif'>
-                    <Accordion title="Description" text={logement.description} />
-                    <Accordion title="Equipements" text={logement.equipments} /> 
-                </div>
             </div>
-            <Footer />
+            <div className='descriptif'>
+                <Accordion title="Description" text={logement.description} />
+                <Accordion title="Equipements" text={logement.equipments} /> 
+            </div>
         </div>
+        <Footer />
+    </div>
     )
 }
 
