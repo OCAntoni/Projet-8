@@ -8,8 +8,8 @@ function Rating({notation}) {
         <div className="rating">
             {stars.map((ratingStar) => 
                 notation >= ratingStar ? (
-                    <img className="stars"  src={starActive} alt="notation étoile active"></img>
-                  ) :  <img className="stars"  src={starInactive} alt="notation étoile inactive"></img>
+                    <img className="stars" key={ratingStar} src={starActive} alt="notation étoile active"></img>
+                  ) :  <img className="stars" key={ratingStar}  src={starInactive} alt="notation étoile inactive"></img>
             )}
         </div>
     )

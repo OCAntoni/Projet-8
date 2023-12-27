@@ -48,7 +48,7 @@ $font1: 'Montserrat';
         width: 100%;
         color: white;
         font-family: $font1;
-        font-size: 24px;
+        font-size: 18px;
         padding: 10px 0px 10px 15px;
         @media (max-width : 950px) {
             font-size: 13px;
@@ -85,9 +85,9 @@ $font1: 'Montserrat';
         padding: 20px 10px 20px 10px;
         margin-top: 0px;
         font-family: $font1;
+        font-size: 16px;
         opacity: 1;
         transition: 0.5s;
-        font-size: 20px;
         @media (max-width : 950px) {
             font-size: 10px;
             width: 100%;
@@ -102,7 +102,7 @@ $font1: 'Montserrat';
             height: 0;
             transition: 0.5s;
             margin: 0;
-            font-size: 20px;
+            font-size: 16px;
             @media (max-width : 950px) {
                 font-size: 10px;
                 width: 100%;

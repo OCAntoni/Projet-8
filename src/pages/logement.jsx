@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Data from "../datas/appartements.json"
 import Header from "../components/header/header"
@@ -7,14 +5,13 @@ import Carousel from "../components/carousel/carousel"
 import Rating from '../components/rating-logements/rating.jsx'
 import Accordion from '../components/accordion-apropos/accordion-apropos'
 import Footer from "../components/footer/footer"
-import Error from './error'
 import "../styles/main.scss"
 
 function Logement() {
     let {id} = useParams()
     let logements = Data
     let logement = logements.find((item) => {
-        if (item.id == id) {  
+        if (item.id === id) {  
         return true;
         }
         return false;
@@ -40,7 +37,7 @@ function Logement() {
                 <div className='tags-rating'>
                     <div className='tags'>
                         {logement.tags.map((tag) =>(
-                            <ul>
+                            <ul key={tag}>
                                 <li>{tag}</li>
                             </ul>
                         ))}
