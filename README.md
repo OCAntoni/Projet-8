@@ -7,5 +7,3 @@
 <h2>Technos. utilisées</h2>
 
 REACT / SCSS / HTML
-
-<h2>Liens</h2>
