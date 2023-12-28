@@ -7,7 +7,7 @@ function Accordion(props){
     return (
         <div className="listes" onClick={() => setIsOpen(!isOpen)}>
         <h2 className="titre">{props.title} <img className={isOpen? "arrow-up-close":"arrow-up"} src={ArrowUp} alt="flèche vers le haut"></img></h2>
-        <p className={isOpen? "text-hidden" : "text"}>{props.text}</p>
+        <p dangerouslySetInnerHTML={{ __html: props.text}} className={isOpen? "text-hidden" : "text"}></p>
         </div>
     )
 }

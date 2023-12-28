@@ -119,6 +119,7 @@ $red: #FF6060;
 
             .tags {
                 display: flex;
+                flex-wrap: wrap;
                 flex-direction: row;
                 align-items: center;
                 gap: 10px;
@@ -155,7 +156,7 @@ $red: #FF6060;
                 flex-direction: row-reverse;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 20px;
+                margin-top: 16px;
             }
 
             .host {
@@ -211,13 +212,13 @@ $red: #FF6060;
             margin-top: 20px;
             flex-direction: column;
             margin-bottom: 27px;
+            gap: 20px;
         }
 
         .listes {
             width: 45%;
             @media (max-width : 950px) {
                 width: 100%;
-                gap: 20px;
             }
         }
 
@@ -225,6 +226,11 @@ $red: #FF6060;
             @media (max-width : 950px) {
                 font-size: 13px;
             }
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 5px;
         }
     }
 }

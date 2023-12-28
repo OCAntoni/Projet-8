@@ -46,13 +46,13 @@ $font1: 'Montserrat';
         border-radius: 5px;
         background-color: $red;
         width: 100%;
+        box-sizing: border-box;
         color: white;
         font-family: $font1;
         font-size: 18px;
         padding: 10px 0px 10px 15px;
         @media (max-width : 950px) {
             font-size: 13px;
-            padding: 0px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
@@ -79,6 +79,7 @@ $font1: 'Montserrat';
 
     .text {
         width: 100%;
+        box-sizing: border-box;
         background-color: #F6F6F6;
         color: $red;
         border-radius: 5px;
@@ -89,12 +90,13 @@ $font1: 'Montserrat';
         opacity: 1;
         transition: 0.5s;
         @media (max-width : 950px) {
-            font-size: 10px;
             width: 100%;
+            font-size: 10px;
         }
     
 
         &-hidden {
+            box-sizing: border-box;
             background-color: #F6F6F6;
             color: $red;
             font-family: $font1;
@@ -104,8 +106,8 @@ $font1: 'Montserrat';
             margin: 0;
             font-size: 16px;
             @media (max-width : 950px) {
-                font-size: 10px;
                 width: 100%;
+                font-size: 10px;
             }
         }
     }

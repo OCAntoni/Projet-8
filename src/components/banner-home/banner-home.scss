@@ -38,7 +38,8 @@ $font1: 'Montserrat';
         font-family: $font1;
         @media (max-width : 950px) {
             font-size: 24px;
-            margin-left: 16px;
+            text-align: left;
+            width: 80%;
         }
     }
 }
